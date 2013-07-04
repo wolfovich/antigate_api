@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = AntigateApi::VERSION
   gem.authors       = ["Tam Vo"]
   gem.email         = ["vo.mita.ov@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Antigate (Decode captcha service) wrapper for Ruby}
+  gem.summary       = %q{Antigate (Decode captcha service) wrapper for Ruby}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
@@ -17,3 +17,4 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
 end
+
