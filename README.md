@@ -1,6 +1,6 @@
 # AntigateApi
 
-TODO: Write a gem description
+Antigate (Decode captcha service - antigate.com) wrapper
 
 ## Installation
 
@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+options = {
+  recognition_time: 5, # First waiting time
+  sleep_time: 1, # Sleep time for every check interval
+  timeout: 60, # Max time out for decoding captcha
+  debug: false # Verborse or not
+}
+client = AntigateApi::Client.new(ANTIGATE_KEY, options)
+captcha_id, captcha_answer = client.decode("captcha.gif")
+puts captcha_id + " " + captcha_answer
+```
 
 ## Contributing
 
