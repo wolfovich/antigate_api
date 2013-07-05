@@ -25,7 +25,7 @@ module AntigateApi
                                            :method => 'post',
                                            :key => @key,
                                            :file => UploadIO.new( file, 'image/jpeg', 'image.jpg' ),
-                                           :numeric => 1 )
+                                           :numeric => 0 )
       http = Net::HTTP.new( uri.host, uri.port )
       begin
         resp = http.request( req )

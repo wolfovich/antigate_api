@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["vo.mita.ov@gmail.com"]
   gem.description   = %q{Antigate (Decode captcha service) wrapper for Ruby}
   gem.summary       = %q{Antigate (Decode captcha service) wrapper for Ruby}
-  gem.homepage      = ""
+  gem.homepage      = "http://github.com/tamvo/antigate_api"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
