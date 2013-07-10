@@ -5,6 +5,7 @@ require 'antigate_api/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "antigate_api"
+  gem.license       = "MIT"
   gem.version       = AntigateApi::VERSION
   gem.authors       = ["Tam Vo"]
   gem.email         = ["vo.mita.ov@gmail.com"]
@@ -16,5 +17,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+
+  gem.add_dependency("multipart-post", ">= 3.0.0")
 end
 
