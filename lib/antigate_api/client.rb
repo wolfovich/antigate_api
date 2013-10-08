@@ -81,6 +81,9 @@ module AntigateApi
 
     def decode(captcha_file)
       captcha_id = self.send_captcha(captcha_file)
+      if ["OR_NO_SLOT_AVAILABLE"].include? captcha_id
+        raise AntigateApi::Errors::Error("captcha_id: #{captcha_id}")
+      end
       start_time = Time.now.to_i
       sleep @options[:recognition_time]
 
